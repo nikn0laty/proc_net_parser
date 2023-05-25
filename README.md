@@ -6,7 +6,7 @@ Based on the script **`Ruan Tannhäuser`** [here](https://medium.com/@tannhauser
 ## Some changes script of Ruan Tannhäuser
 * Display of errors is hidden for those versions of `awk` where there is no parameter `--version`
 * Added display of `UID` value
-* Added the ability to specify an arbitrary .txt file in the `/proc/net/tcp` format
+* Added the ability to specify an arbitrary .txt file in the `/proc/net/tcp[udp]` format
 * Other minor changes
 
 ## Why is it needed
@@ -14,7 +14,7 @@ Immediately I can name at least two purposes of use this Bash-script:
 * Using a script in `docker` containers where there are no commands like:
 	* netstat
 	* ss
-* Using a script for `LFI` (Local File Inclusion) purposes. When we have the ability to read files on the host, we can try to read the `/proc/net/tcp` file, save it to a separate file and pass it to the input of the script in order to see open ports with the `UID` of the users under which the processes are running. Useful for pentesting, CTF, etc.
+* Using a script for `LFI` (Local File Inclusion) purposes. When we have the ability to read files on the host, we can try to read the `/proc/net/tcp[udp]` file, save it to a separate file and pass it to the input of the script in order to see open ports with the `UID` of the users under which the processes are running. Useful for pentesting, CTF, etc.
 
 ## Install and run
 There are two possibilities to install the script:
