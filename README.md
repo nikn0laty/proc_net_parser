@@ -1,6 +1,5 @@
-
-# proc_net_parser for /proc/net/tcp
-Transform **`/proc/net/tcp`** to human readable format in .csv file
+# proc_net_parser for /proc/net/tcp[udp]
+Transform **`/proc/net/tcp[udp]`** to human readable format in .csv file
 
 Based on the script **`Ruan Tannhäuser`** [here](https://medium.com/@tannhauser.sphinx/bash-linux-networking-transform-proc-net-tcp-to-human-readable-format-d85863eca208)
 
